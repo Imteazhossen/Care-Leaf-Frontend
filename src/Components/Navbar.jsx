@@ -1,9 +1,11 @@
 import React from 'react';
-import '../assets/logo.png' ;
+import '../assets/logo.png';
+import { Link, NavLink } from 'react-router';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100  px-5 md:px-25">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -11,37 +13,26 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
+                        <li className='font-bold text-slate-500 '> <NavLink to='/' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>Home</NavLink></li>
+                        <li className='font-bold text-slate-500 '> <NavLink to='/mybookings' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>My Booking</NavLink></li>
+                        <li className='font-bold text-slate-500 '> <NavLink to='/blogs' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>Blogs</NavLink></li>
+                        <li className='font-bold text-slate-500 '> <NavLink to='/contactus' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>Contact Us</NavLink></li>
+
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">  PhuDu</a>
+                <Link to='/'><button className="btn btn-ghost text-xl font-bold"> <img className='w-8' src={logo} alt="" /> PhuDu</button></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li className='font-bold text-slate-500 '> <NavLink to='/' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>Home</NavLink></li>
+                    <li className='font-bold text-slate-500 '> <NavLink to='/mybookings' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>My Booking</NavLink></li>
+                    <li className='font-bold text-slate-500 '> <NavLink to='/blogs' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>Blogs</NavLink></li>
+                    <li className='font-bold text-slate-500 '> <NavLink to='/contactus' className={({ isActive }) => isActive ? 'border-b-5 border-indigo-500 ' : ''}>Contact Us</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn btn-primary rounded-full">Emergency</a>
             </div>
         </div>
     );

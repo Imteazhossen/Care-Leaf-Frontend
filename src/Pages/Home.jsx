@@ -1,10 +1,12 @@
 import React from 'react';
+import Banner from '../Components/Banner';
+import DoctorsContainer from '../Components/DoctorsContainer';
 
 const Home = () => {
     return (
         <div>
-            <h1>Banner section</h1>
-            <h2>Our best doctors</h2>
+            <Banner></Banner>
+            <DoctorsContainer></DoctorsContainer>
         </div>
     );
 };

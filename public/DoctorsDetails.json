@@ -1,111 +1,123 @@
 [
     {
       "id": 1,
-      "doctorImage": "https://randomuser.me/api/portraits/men/32.jpg",
-      "name": "Dr. David Miller",
+      "doctorImage": "https://i.ibb.co.com/h1ZWLnNL/d1.jpg",
+      "name": "Dr. Emily Carter",
       "education": "MBBS, MD (Cardiology)",
       "speciality": "Cardiologist",
       "experience": "12 years",
-      "registrationNumber": "REG123456"
+      "registrationNumber": "REG123456",
+      "fees": "1000"
     },
     {
       "id": 2,
-      "doctorImage": "https://randomuser.me/api/portraits/women/45.jpg",
-      "name": "Dr. Sarah Thompson",
-      "education": "MBBS, MS (General Surgery)",
-      "speciality": "General Surgeon",
+      "doctorImage": "https://i.ibb.co.com/L4hsJVv/d3.jpg",
+      "name": "Dr. Michael Thomps",
+      "education": "MBBS, MS (Orthopedics)",
+      "speciality": "Orthopedic Surgeon",
       "experience": "10 years",
-      "registrationNumber": "REG234567"
+      "registrationNumber": "REG234567",
+      "fees": "2000"
     },
     {
       "id": 3,
-      "doctorImage": "https://randomuser.me/api/portraits/men/54.jpg",
-      "name": "Dr. James Anderson",
-      "education": "MBBS, DNB (Neurology)",
-      "speciality": "Neurologist",
-      "experience": "9 years",
-      "registrationNumber": "REG345678"
+      "doctorImage": "https://i.ibb.co.com/Y7ZPNnLS/d12.jpg",
+      "name": "Dr. Sophia Patel",
+      "education": "MBBS, MD (Pediatrics)",
+      "speciality": "Pediatrician",
+      "experience": "8 years",
+      "registrationNumber": "REG345678",
+      "fees": "1200"
     },
     {
       "id": 4,
-      "doctorImage": "https://randomuser.me/api/portraits/women/30.jpg",
-      "name": "Dr. Emily Garcia",
-      "education": "MBBS, MD (Pediatrics)",
-      "speciality": "Pediatrician",
-      "experience": "7 years",
-      "registrationNumber": "REG456789"
+      "doctorImage": "https://i.ibb.co.com/Lzxjs15q/d5.jpg",
+      "name": "Dr. James Rodriguez",
+      "education": "MBBS, MD (Dermatology)",
+      "speciality": "Dermatologist",
+      "experience": "15 years",
+      "registrationNumber": "REG456789",
+      "fees": "1500"
     },
     {
       "id": 5,
-      "doctorImage": "https://randomuser.me/api/portraits/men/27.jpg",
-      "name": "Dr. Michael Smith",
-      "education": "MBBS, MS (Orthopedics)",
-      "speciality": "Orthopedic Surgeon",
-      "experience": "15 years",
-      "registrationNumber": "REG567890"
+      "doctorImage": "https://i.ibb.co.com/b5krmM3n/d6.jpg",
+      "name": "Dr. Olivia Nguyen",
+      "education": "MBBS, MS (General Surgery)",
+      "speciality": "General Surgeon",
+      "experience": "9 years",
+      "registrationNumber": "REG567890",
+      "fees": "1800"
     },
     {
       "id": 6,
-      "doctorImage": "https://randomuser.me/api/portraits/women/25.jpg",
-      "name": "Dr. Olivia Martin",
-      "education": "MBBS, MD (Dermatology)",
-      "speciality": "Dermatologist",
-      "experience": "8 years",
-      "registrationNumber": "REG678901"
+      "doctorImage": "https://i.ibb.co.com/27hJLmvz/7.jpg",
+      "name": "Dr. William Kim",
+      "education": "MBBS, MD (Neurology)",
+      "speciality": "Neurologist",
+      "experience": "11 years",
+      "registrationNumber": "REG678901",
+      "fees": "2000"
     },
     {
       "id": 7,
-      "doctorImage": "https://randomuser.me/api/portraits/men/65.jpg",
-      "name": "Dr. William Johnson",
-      "education": "MBBS, DM (Endocrinology)",
+      "doctorImage": "https://i.ibb.co.com/SDBbYR7S/d8.jpg",
+      "name": "Dr. Isabella Martinez",
+      "education": "MBBS, MD (Endocrinology)",
       "speciality": "Endocrinologist",
-      "experience": "11 years",
-      "registrationNumber": "REG789012"
+      "experience": "7 years",
+      "registrationNumber": "REG789012",
+      "fees": "500"
     },
     {
       "id": 8,
-      "doctorImage": "https://randomuser.me/api/portraits/women/50.jpg",
-      "name": "Dr. Ava Clark",
-      "education": "MBBS, MD (Gynecology)",
-      "speciality": "Gynecologist",
+      "doctorImage": "https://i.ibb.co.com/jPg9VVLQ/d9.jpg",
+      "name": "Dr. Benjamin Lee",
+      "education": "MBBS, MS (Ophthalmology)",
+      "speciality": "Ophthalmologist",
       "experience": "13 years",
-      "registrationNumber": "REG890123"
+      "registrationNumber": "REG890123",
+      "fees": "1000"
     },
     {
       "id": 9,
-      "doctorImage": "https://randomuser.me/api/portraits/men/42.jpg",
-      "name": "Dr. Benjamin Lewis",
+      "doctorImage": "https://i.ibb.co.com/7tdDPGf5/d10.jpg",
+      "name": "Dr. Mia Gonzalez",
       "education": "MBBS, MD (Psychiatry)",
       "speciality": "Psychiatrist",
       "experience": "6 years",
-      "registrationNumber": "REG901234"
+      "registrationNumber": "REG901234",
+      "fees": "1700"
     },
     {
       "id": 10,
-      "doctorImage": "https://randomuser.me/api/portraits/women/60.jpg",
-      "name": "Dr. Isabella Walker",
+      "doctorImage": "https://i.ibb.co.com/ynFdR0Fc/d11.jpg",
+      "name": "Dr. Alexander Brown",
       "education": "MBBS, MD (Radiology)",
       "speciality": "Radiologist",
       "experience": "5 years",
-      "registrationNumber": "REG012345"
+      "registrationNumber": "REG012345",
+      "fees": "1300"
     },
     {
       "id": 11,
-      "doctorImage": "https://randomuser.me/api/portraits/men/36.jpg",
-      "name": "Dr. Daniel Harris",
+      "doctorImage": "https://i.ibb.co.com/Y7ZPNnLS/d12.jpg",
+      "name": "Dr. Charlotte Davis",
       "education": "MBBS, MD (Gastroenterology)",
       "speciality": "Gastroenterologist",
       "experience": "10 years",
-      "registrationNumber": "REG132435"
+      "registrationNumber": "REG132435",
+      "fees": "1000"
     },
     {
       "id": 12,
-      "doctorImage": "https://randomuser.me/api/portraits/women/33.jpg",
-      "name": "Dr. Mia Scott",
+      "doctorImage": "https://i.ibb.co.com/L4hsJVv/d3.jpg",
+      "name": "Dr. Daniel Wilson",
       "education": "MBBS, MD (Oncology)",
       "speciality": "Oncologist",
       "experience": "9 years",
-      "registrationNumber": "REG543210"
+      "registrationNumber": "REG543210",
+      "fees": "1800"
     }
   ]
   

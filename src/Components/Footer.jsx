@@ -4,6 +4,7 @@ import logo from '../assets/logo.png'
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSnapchatSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -29,6 +30,9 @@ const Footer = () => {
                     </a>
                     <a href='https://www.snapchat.com/add/imteazhossain81?share_id=z58LevyEMQg&locale=en-US' target='_blank'>
                     <FaSnapchatSquare  size={30}/>
+                    </a>
+                    <a href=' https://www.facebook.com/share/1Bhu5DbyDT/' target='_blank'>
+                    <FaLinkedin  size={30}/>
                     </a>
                 </div>
             </nav>

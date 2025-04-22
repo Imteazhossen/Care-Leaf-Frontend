@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Banner from '../Components/Banner';
 import DoctorsContainer from '../Components/DoctorsContainer';
 import { useLoaderData } from 'react-router';
@@ -10,7 +10,8 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <DoctorsContainer doctorsDetails={data}></DoctorsContainer>
+            <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}> <DoctorsContainer doctorsDetails={data}></DoctorsContainer></Suspense>
+           
             <Numbers></Numbers>
         </div>
     );

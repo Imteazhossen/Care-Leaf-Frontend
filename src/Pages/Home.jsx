@@ -3,7 +3,7 @@ import Banner from '../Components/Banner';
 import DoctorsContainer from '../Components/DoctorsContainer';
 import { useLoaderData } from 'react-router';
 import Numbers from '../Components/Numbers';
-import NoDoctorFound from './NoDoctorFound';
+
 
 const Home = () => {
     const data = useLoaderData();

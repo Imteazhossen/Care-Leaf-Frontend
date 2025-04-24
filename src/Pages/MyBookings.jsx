@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router';
 import { getStoredBooking } from '../Utility/addToDB';
 import AppoinmentCard from '../Components/AppoinmentCard';
+import CustomShapeBarChart from '../Components/CustomShapeBarChart';
 
 const MyBookings = () => {
     const data = useLoaderData();
@@ -30,6 +31,10 @@ const MyBookings = () => {
     
     return (
         <div>
+            <div className={`my-10 flex justify-center ${list.length === 0 ?  "hidden" :""}`}>
+                 <CustomShapeBarChart list={list}></CustomShapeBarChart>
+            </div>
+
             <div className={`my-10 ${list.length === 0 ? "" : "hidden"}`}>
                 <h1 className='text-2xl md:text-4xl font-bold text-center '>You have not booked any appointment yet</h1>
                 <p className='mt-5 text-center'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. </p>

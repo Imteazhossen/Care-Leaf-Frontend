@@ -1,9 +1,10 @@
 import React from 'react';
+import CustomShapeBarChart from '../Components/CustomShapeBarChart';
 
 const ContactUs = () => {
     return (
         <div>
-            <h1>Contact us</h1>
+            <CustomShapeBarChart></CustomShapeBarChart>
         </div>
     );
 };

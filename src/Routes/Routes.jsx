@@ -7,6 +7,7 @@ import Blogs from "../Pages/Blogs";
 import ContactUs from "../Pages/ContactUs";
 import DoctorDetails from "../Pages/DoctorDetails";
 import Error from "../Pages/Error";
+import NoDoctorFound from "../Pages/NoDoctorFound";
 
 export const router = createBrowserRouter([
     {
@@ -40,6 +41,7 @@ export const router = createBrowserRouter([
             {
                 path: '/doctordetails/:id',
                 Component: DoctorDetails,
+                errorElement: <NoDoctorFound />,
                 hydrateFallbackElement: <div className="flex justify-center"><span className="loading loading-bars flex justify-center loading-xl"></span></div> ,
                 loader: () => fetch('../DoctorsDetails.json'),
             },

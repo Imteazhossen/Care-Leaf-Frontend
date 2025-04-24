@@ -3,6 +3,7 @@ import Banner from '../Components/Banner';
 import DoctorsContainer from '../Components/DoctorsContainer';
 import { useLoaderData } from 'react-router';
 import Numbers from '../Components/Numbers';
+import NoDoctorFound from './NoDoctorFound';
 
 const Home = () => {
     const data = useLoaderData();
@@ -10,6 +11,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            
             <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}> <DoctorsContainer doctorsDetails={data}></DoctorsContainer></Suspense>
            
             <Numbers></Numbers>

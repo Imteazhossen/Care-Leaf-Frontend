@@ -12,12 +12,11 @@ const AppoinmentCard = ({ doctor , handleCancel}) => {
                     </div>
                     <p>Appointment Fee: {doctor.fees} Taka + Vat</p>
                 </div>
-                {/* <Link to='/mybookings'>
-                <button onClick={notify} class="btn w-full mt-5  rounded-full btn-primary">Book Appointment Now</button>
-                <ToastContainer />
-            </Link> */}
-                <button onClick={() => { handleCancel(doctor.id); toast.error(`Appointment canceled for ${doctor.name}`); }} className="btn btn-outline btn-error w-full mt-5 rounded-full ">Cancel Appointment</button>
-                <ToastContainer />
+               
+                <button onClick={() => { 
+                    handleCancel(doctor.id); 
+                    toast.error(`Appointment canceled for ${doctor.name}`); }} className="btn btn-outline btn-error w-full mt-5 rounded-full ">Cancel Appointment</button>
+               
 
 
             </div>

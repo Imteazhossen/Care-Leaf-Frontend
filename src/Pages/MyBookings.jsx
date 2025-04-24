@@ -16,8 +16,6 @@ const MyBookings = () => {
     },[])
 
 
-
-
     const handleCancel = (id) => {
         // Remove from local storage
         const updatedList = list.filter(doctor => doctor.id !== id);
@@ -29,19 +27,7 @@ const MyBookings = () => {
         localStorage.setItem('readList', JSON.stringify(newStored));
     };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     return (
         <div>
             <div className={`my-10 ${list.length === 0 ? "" : "hidden"}`}>

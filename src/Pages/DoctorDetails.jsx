@@ -61,17 +61,14 @@ const DoctorDetails = () => {
                         <button className="btn btn-outline btn-success rounded-full bg-green-100">Doctor Available Today</button>
                     </div>
                     <button className="btn my-2 rounded-full bg-yellow-100 btn-outline btn-warning"><CiSquareInfo size={20} />Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</button>
-                    {/* <Link to='/mybookings'>
-                        <button onClick={notify} class="btn w-full mt-5  rounded-full btn-primary">Book Appointment Now</button>
-                        <ToastContainer />
-                    </Link> */}
+                
                     <button
                         onClick={() => {
                             
                             toast.success(`Appointment Scheduled for ${name} successfully`);
                             setTimeout(() => {
                                 navigate('/mybookings');
-                            }, 6000); // 3000ms = 3 seconds
+                            }, 5000); 
                             handleDoctorBooked(id)
                         }}
                         className="btn w-full mt-5 rounded-full btn-primary"
@@ -79,8 +76,6 @@ const DoctorDetails = () => {
                         Book Appointment Now
                     </button>
                     <ToastContainer />
-
-
                 </div>
             </div>
             

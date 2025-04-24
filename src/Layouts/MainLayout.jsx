@@ -13,6 +13,7 @@ const MainLayout = () => {
           </div> */}
           <Outlet></Outlet>
           <Footer></Footer>
+         
         </>
     );
 };

@@ -24,7 +24,8 @@ const MyBookings = () => {
         setList(updatedList);
 
         const stored = JSON.parse(localStorage.getItem('readList')) || [];
-        const newStored = stored.filter(storedId => storedId !== id);
+        const newStored = stored.filter(storedId => parseInt(storedId) !== id);
+       
         localStorage.setItem('readList', JSON.stringify(newStored));
     };
 

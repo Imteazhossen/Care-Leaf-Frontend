@@ -24,6 +24,8 @@ export const router = createBrowserRouter([
             {
                 path: '/mybookings',
                 Component: MyBookings ,
+                hydrateFallbackElement: <div className="flex justify-center"><span className="loading loading-bars flex justify-center loading-xl"></span></div> ,
+                loader: () => fetch('../DoctorsDetails.json'),
             },
             {
                 path: '/blogs',

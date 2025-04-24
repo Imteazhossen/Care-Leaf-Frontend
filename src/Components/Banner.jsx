@@ -11,7 +11,7 @@ const Banner = () => {
                     <h1 className= 'text-2xl md:text-5xl font-bold text-center '>Dependable Care, Backed by Trusted  <br /> Professionals.</h1>
                     <p className='mt-5 text-center'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
                     <form className='justify-center sm:space-y-5 flex flex-col md:flex-row items-center space-x-3 my-4'>
-                    <input type="text" placeholder="Large" className="input input-lg w-4/6 rounded-full" />
+                    <input type="text" placeholder="Search" className="input input-lg w-4/6 rounded-full" />
                     <button className='btn btn-primary rounded-full p-5 mb-5'>Search Now</button>
                     </form>
                     

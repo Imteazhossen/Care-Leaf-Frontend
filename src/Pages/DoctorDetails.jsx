@@ -3,6 +3,7 @@ import { useLoaderData, useNavigate, useParams } from 'react-router';
 import { PiTrademarkRegistered } from "react-icons/pi";
 import { CiSquareInfo } from "react-icons/ci";
 import { ToastContainer, toast } from 'react-toastify';
+import { addToStoredDB } from '../Utility/addToDB';
 
 
 const DoctorDetails = () => {
@@ -10,10 +11,13 @@ const DoctorDetails = () => {
     const data = useLoaderData();
     const { id } = useParams();
     const singleDoctor = data.find(doctor => doctor.id === parseInt(id));
-    const { day1, day2, day3, doctorImage, working, name, education, speciality, experience, registrationNumber, fees } = singleDoctor
+    const { day1, day2, day3, doctorImage, working, name, education,  registrationNumber, fees } = singleDoctor
     // const notify = () => toast(`Appointment Scheduled for ${name} successfully `);
     const navigate = useNavigate();
     // console.log(data);
+    const handleDoctorBooked = id =>{
+        addToStoredDB(id);
+    }
     return (
         <div>
             <div className="flex justify-center">
@@ -31,7 +35,7 @@ const DoctorDetails = () => {
                         <div className="details w-4/6 p-10 space-y-6 ">
                             <h1 className='text-4xl font-bold'>{name}</h1>
                             <p className="text-gray-400 text-lg font-medium">{education}</p>
-                            <p className="text-gray-400 text-lg font-medium">Working At: {working}</p>
+                            <p className="text-gray-400 text-lg font-medium">Working At</p>
                             <h1 className='text-3xl font-bold p'>{working}</h1>
                             <div className='flex space-x-3 items-center border-y-2 text-slate-500 border-slate-200 border-dashed p-5'>
                                 <PiTrademarkRegistered size={20} />
@@ -63,10 +67,12 @@ const DoctorDetails = () => {
                     </Link> */}
                     <button
                         onClick={() => {
+                            
                             toast.success(`Appointment Scheduled for ${name} successfully`);
                             setTimeout(() => {
                                 navigate('/mybookings');
                             }, 6000); // 3000ms = 3 seconds
+                            handleDoctorBooked(id)
                         }}
                         className="btn w-full mt-5 rounded-full btn-primary"
                     >
@@ -77,6 +83,7 @@ const DoctorDetails = () => {
 
                 </div>
             </div>
+            
         </div>
     );
 };

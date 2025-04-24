@@ -1,5 +1,6 @@
 import React from 'react';
 import { PiTrademarkRegistered } from "react-icons/pi";
+import { Link } from 'react-router';
 
 const DoctorCard = ({ doctor }) => {
     const { id, doctorImage, name, education, speciality, experience, registrationNumber } = doctor;
@@ -12,19 +13,22 @@ const DoctorCard = ({ doctor }) => {
             </figure>
             <div className="card-body">
                 <div className='flex space-x-2'>
-                <div class="badge badge-outline badge-accent">Available</div>
-                <div class="badge badge-outline badge-info">{experience}+ Years Experience</div>
+                    <div className="badge badge-outline badge-accent">Available</div>
+                    <div className="badge badge-outline badge-info">{experience}+ Years Experience</div>
                 </div>
-           
+
                 <h2 className="card-title font-bold text-3xl">{name}</h2>
                 <p className='text-slate-500 mt-2 pb-3 border-b-2 border-dashed'>{education}, {speciality}</p>
                 <div className='flex space-x-3 items-center'>
-                <PiTrademarkRegistered size={20}/>
-                <p className='text-slate-500'>  Reg No: {registrationNumber}</p>
+                    <PiTrademarkRegistered size={20} />
+                    <p className='text-slate-500'>  Reg No: {registrationNumber}</p>
                 </div>
-                
+
                 <div className="card-actions ">
-                <button class="btn btn-outline btn-info w-full rounded-full mt-3">View Details</button>
+                    <Link to={`/doctordetails/${id}`}>
+                        <button className="btn btn-outline btn-info w-[300px] rounded-full mt-3">View Details</button>
+                    </Link>
+
                 </div>
             </div>
         </div>

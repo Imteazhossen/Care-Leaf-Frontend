@@ -17,7 +17,8 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 Component: Home,
-                loader: () => fetch('DoctorsDetails.json'),
+                hydrateFallbackElement: <div className="flex justify-center"><span className="loading loading-bars flex justify-center loading-xl"></span></div> ,
+                loader: () => fetch('../DoctorsDetails.json'),
                
             },
             {
@@ -27,6 +28,7 @@ export const router = createBrowserRouter([
             {
                 path: '/blogs',
                 Component: Blogs,
+                hydrateFallbackElement: <div className="flex justify-center"><span className="loading loading-bars flex justify-center loading-xl"></span></div> ,
                 loader: () => fetch('BlogsDetails.json'),
             },
             {
@@ -34,8 +36,10 @@ export const router = createBrowserRouter([
                 Component: ContactUs,
             },
             {
-                path: '/doctordetails',
+                path: '/doctordetails/:id',
                 Component: DoctorDetails,
+                hydrateFallbackElement: <div className="flex justify-center"><span className="loading loading-bars flex justify-center loading-xl"></span></div> ,
+                loader: () => fetch('../DoctorsDetails.json'),
             },
         ]
     },

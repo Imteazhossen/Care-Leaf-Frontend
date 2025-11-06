@@ -21,13 +21,13 @@ const DoctorDetails = () => {
     return (
         <div>
             <div className="flex justify-center">
-                <div className="rounded-2xl bg-white p-7 w-10/12 my-10">
+                <div className="rouded-xl bg-white p-7 w-10/12 my-10">
                     <h1 className='text-2xl md:text-5xl font-bold text-center '>Doctor's Profile Details</h1>
                     <p className='mt-5 text-center'>Doctors gain valuable experience through years of study, hands-on training, patient care, and critical decision-making, developing empathy, precision, and confidence while managing complex cases and constantly learning in a dynamic healthcare environment.</p>
                 </div>
             </div>
             <div className=' flex justify-center'>
-                <div className='p-11 bg-white w-10/12 rounded-2xl '>
+                <div className='p-11 bg-white w-10/12 rouded-xl '>
                     <div className="doctor-card flex">
                         <div className="doctor-image w-2/6 ">
                             <img className='rounded-xl ' src={doctorImage} alt="" />
@@ -53,7 +53,7 @@ const DoctorDetails = () => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <div className="rounded-2xl bg-white p-7 w-10/12 my-10">
+                <div className="rouded-xl bg-white p-7 w-10/12 my-10">
                     <h1 className='text-2xl md:text-2xl font-bold text-center mb-5'>Book an Appointment</h1>
                     <div className='flex justify-between  items-center border-y-2 text-slate-500 border-slate-200 border-dashed p-3 my-2'>
 

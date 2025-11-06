@@ -7,7 +7,7 @@ const DoctorCard = ({ doctor }) => {
     return (
         <div className="card bg-base-100  shadow-sm">
             <figure className='p-7'>
-                <img className='h-[320px] w-full  rounded-2xl'
+                <img className='h-[320px] w-full  rouded-xl'
                     src={doctorImage}
                     alt="Shoes" />
             </figure>

@@ -1,34 +1,84 @@
-import React from 'react';
-import banner from '../assets/banner-img-1.png'
-import banner2 from '../assets/banner2.jpg'
+import React, { useState } from "react";
+import { FaLeaf, FaCloudUploadAlt } from "react-icons/fa";
+import banner from "../assets/banner-img-1.jpg";
+import banner2 from "../assets/banner2.jpg";
 
 const Banner = () => {
-    return (
-        <div className=' md:py-10 mx-auto'>
-            <div className='p-4 md:p-15 border-3 border-white mx-20 rounded-3xl flex flex-col bg-linear-to-t from-white to-gray-100'>
-                {/* text and search box  */}
-                <div className=''>
-                    <h1 className= 'text-2xl md:text-5xl font-bold text-center '>Dependable Care, Backed by Trusted  <br /> Professionals.</h1>
-                    <p className='mt-5 text-center'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
-                    <form className='justify-center sm:space-y-5 flex flex-col md:flex-row items-center space-x-3 my-4'>
-                    <input type="text" placeholder="Search" className="input input-lg w-4/6 rounded-full" />
-                    <button className='btn btn-primary rounded-full p-5 mb-5'>Search Now</button>
-                    </form>
-                    
-                </div>
-                {/* images  */}
-                <div className="flex flex-col md:flex-row gap-5 my-8">
-                   <div className='w-full md:w-1/2'>
-                    <img src={banner} alt="" />
-                   </div>
-                   <div className='w-full md:w-1/2'>
-                    <img className='h-full rounded-2xl' src={banner2} alt="" />
-                   </div>
-                </div>
-            </div>
+  const [image, setImage] = useState(null);
 
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImage(URL.createObjectURL(file));
+    }
+  };
+
+  return (
+    <section className="w-full py-10 md:py-16 bg-white flex justify-center items-center">
+      <div className="w-[90%] md:w-[80%] border-2 border-green-200 rounded-3xl shadow-xl bg-white p-6 md:p-12">
+        {/* Text Section */}
+        <div className="text-center space-y-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-green-700 flex justify-center items-center gap-3">
+            <FaLeaf className="text-green-500 animate-bounce" />
+            Smart Gourd Leaf Disease Detector
+          </h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Upload an image of a bottle gourd leaf and let our AI model identify
+            the disease and classify its severity. Powered by our own Hybrid CNN Model and
+            deep learning for accurate, reliable predictions.
+          </p>
         </div>
-    );
+
+        {/* Upload Section */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
+          {/* Upload Box */}
+          <div className="flex flex-col justify-center items-center bg-green-50 border-2 border-green-200 p-6 rouded-xl shadow-sm hover:shadow-md transition duration-300 ease-in-out w-full md:w-1/2">
+            <label
+              htmlFor="leaf-upload"
+              className="cursor-pointer flex flex-col items-center justify-center"
+            >
+              <FaCloudUploadAlt className="text-6xl text-green-500 hover:scale-110 transition-transform duration-300" />
+              <p className="text-gray-600 mt-3">Click to upload leaf image</p>
+              <input
+                id="leaf-upload"
+                type="file"
+                accept="image/*"
+                className="hidden"
+                onChange={handleImageChange}
+              />
+            </label>
+
+            {image && (
+              <div className="mt-5">
+                <img
+                  src={image}
+                  alt="Uploaded Leaf"
+                  className="rounded-xl h-48 w-48 object-cover border-2 border-green-300"
+                />
+              </div>
+            )}
+            <button className="btn btn-success mt-5 rounded-full px-8 text-white">
+              Analyze Disease
+            </button>
+          </div>
+
+          {/* Right-side Banner Images */}
+          <div className="flex flex-col md:w-1/2 gap-4">
+            <img
+              src={banner}
+              alt="Plant Banner"
+              className="rouded-xl shadow-md hover:scale-105 transition-transform duration-300"
+            />
+            <img
+              src={banner2}
+              alt="Plant Banner 2"
+              className="rouded-xl shadow-md hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Banner;

@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const AppoinmentCard = ({ doctor , handleCancel}) => {
     return (
         <div className="flex justify-center">
-            <div className="rounded-2xl bg-white p-7 w-10/12 my-5">
+            <div className="rouded-xl bg-white p-7 w-10/12 my-5">
                 <div className='flex justify-between  items-center border-y-2 text-slate-500 border-slate-200 border-dashed p-3 my-2'>
                     <div>
                         <p className='font-bold text-black'>Name: {doctor.name} </p>

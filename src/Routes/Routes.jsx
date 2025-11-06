@@ -8,6 +8,8 @@ import ContactUs from "../Pages/ContactUs";
 import DoctorDetails from "../Pages/DoctorDetails";
 import Error from "../Pages/Error";
 import NoDoctorFound from "../Pages/NoDoctorFound";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
 
 export const router = createBrowserRouter([
     {
@@ -35,8 +37,13 @@ export const router = createBrowserRouter([
                 loader: () => fetch('BlogsDetails.json'),
             },
             {
-                path: '/contactus',
-                Component: ContactUs,
+                path: '/contact',
+                Component: Contact,
+            },
+
+            {
+                path: '/about',
+                Component: About,
             },
             {
                 path: '/doctordetails/:id',

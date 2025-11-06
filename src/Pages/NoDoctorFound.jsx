@@ -8,7 +8,7 @@ const NoDoctorFound = () => {
     return (
         <div>
             <div className="flex justify-center">
-                <div className="rounded-2xl bg-white p-7 w-10/12 my-10">
+                <div className="rouded-xl bg-white p-7 w-10/12 my-10">
                     <h1 className='text-2xl md:text-5xl font-bold text-center '>No Doctor Found!!</h1>
                     <p className='mt-5 text-center text-gray-400 font-bold'>No Doctor Found with this Registration Number- </p>
                    
@@ -18,7 +18,7 @@ const NoDoctorFound = () => {
                     </div>
                    
                     <div className='flex justify-center my-5'>
-                    <Link to='/'> <button className='btn btn-primary'>View All Doctors</button></Link>
+                    <Link to='/'> <button className='btn bg-[#043915]'>View All Doctors</button></Link>
                     </div>
                   
                    

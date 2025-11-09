@@ -1,10 +1,13 @@
 import React from "react";
 import { FaBrain, FaSeedling, FaGlobeAsia } from "react-icons/fa";
 import leafAI from "../assets/leaf-ai.jpg"; // 🌿 replace this with your own image
+import ParticlesBackground from "./ParticlesBackground";
 
 const MissionSection = () => {
   return (
-    <section className="bg-gradient-to-b from-green-50 to-green-100 py-20 px-6 md:px-16">
+
+    <section className="bg-transparent border-2 border-green-200 py-20 px-6 md:px-16">
+      <ParticlesBackground color="#008000" density={100} />
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left: Image */}
         <div className="flex justify-center">

@@ -4,7 +4,7 @@ import { FaSeedling, FaLeaf, FaUsers, FaFlask } from "react-icons/fa";
 
 const Numbers = () => {
   return (
-    <section className="my-16 bg-gradient-to-b from-green-50 to-green-100 py-16 rounded-3xl shadow-inner">
+    <section className="my-16 bg-transparent border-2 border-green-200 py-16 rounded-3xl shadow-inner">
       {/* Title */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-extrabold text-green-800">
@@ -19,7 +19,7 @@ const Numbers = () => {
       {/* Stats Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 md:px-16">
         {/* Datasets */}
-        <div className="bg-white rouded-xl shadow-md hover:shadow-xl transition p-8 text-center">
+        <div className="bg-white rounded-xl border-2 border-green-700 shadow-md hover:shadow-2xl transition p-8 text-center">
           <div className="flex justify-center mb-4">
             <FaLeaf className="text-green-500 text-5xl" />
           </div>
@@ -30,7 +30,7 @@ const Numbers = () => {
         </div>
 
         {/* Models */}
-        <div className="bg-white rouded-xl shadow-md hover:shadow-xl transition p-8 text-center">
+        <div className="bg-white rounded-xl border-2 border-green-700 shadow-md hover:shadow-2xl transition p-8 text-center">
           <div className="flex justify-center mb-4">
             <FaFlask className="text-green-500 text-5xl" />
           </div>
@@ -41,7 +41,7 @@ const Numbers = () => {
         </div>
 
         {/* Collaborations */}
-        <div className="bg-white rouded-xl shadow-md hover:shadow-xl transition p-8 text-center">
+        <div className="bg-white rounded-xl border-2 border-green-700 shadow-md hover:shadow-2xl transition p-8 text-center">
           <div className="flex justify-center mb-4">
             <FaUsers className="text-green-500 text-5xl" />
           </div>
@@ -52,7 +52,7 @@ const Numbers = () => {
         </div>
 
         {/* Accuracy */}
-        <div className="bg-white rouded-xl shadow-md hover:shadow-xl transition p-8 text-center">
+        <div className="bg-white rounded-xl border-2 border-green-700 shadow-md hover:shadow-2xl transition p-8 text-center">
           <div className="flex justify-center mb-4">
             <FaSeedling className="text-green-500 text-5xl" />
           </div>

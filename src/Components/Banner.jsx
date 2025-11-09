@@ -14,7 +14,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="w-full py-10 md:py-16 bg-white flex justify-center items-center">
+    <section className="w-full py-10 md:py-16 bg-transparent flex justify-center items-center">
       <div className="w-[90%] md:w-[80%] border-2 border-green-200 rounded-3xl shadow-xl bg-white p-6 md:p-12">
         {/* Text Section */}
         <div className="text-center space-y-4">

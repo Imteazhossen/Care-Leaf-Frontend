@@ -16,7 +16,7 @@ export default function ContactUs() {
 
   return (
     <section
-      className="relative mx-auto max-w-7xl mb-10 px-4 sm:px-4 lg:px-4"
+      className="relative mx-auto max-w-7xl border-2 border-green-200 mb-10 px-4 sm:px-4 lg:px-4"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

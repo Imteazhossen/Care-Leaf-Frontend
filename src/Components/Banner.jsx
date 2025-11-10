@@ -49,7 +49,7 @@ const Banner = () => {
             </label>
 
             {image && (
-              <div className="mt-5">
+              <div className="mt-5 rounded-xl">
                 <img
                   src={image}
                   alt="Uploaded Leaf"
@@ -67,12 +67,12 @@ const Banner = () => {
             <img
               src={banner}
               alt="Plant Banner"
-              className="rouded-xl shadow-md hover:scale-105 transition-transform duration-300"
+              className="rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
             />
             <img
               src={banner2}
               alt="Plant Banner 2"
-              className="rouded-xl shadow-md hover:scale-105 transition-transform duration-300"
+              className="rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>

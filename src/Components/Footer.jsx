@@ -8,8 +8,8 @@ import { FaLeaf } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-green-50 to-green-100 text-green-800 pt-10 pb-6 mt-16 border-t border-green-200 shadow-inner">
-      <div className="container mx-auto flex flex-col items-center space-y-6">
+    <footer className="bg-gradient-to-b rounded-t-[100px] z-50 from-green-50 to-green-100 text-green-800 pt-10 pb-6 mt-16 border-t border-green-200 shadow-inner">
+      <div className="container mx-auto flex z-50 flex-col items-center space-y-6">
         {/* Logo Section */}
         <div className="flex items-center gap-2 text-2xl font-bold text-green-700">
           

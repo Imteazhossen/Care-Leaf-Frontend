@@ -10,6 +10,7 @@ import Error from "../Pages/Error";
 import NoDoctorFound from "../Pages/NoDoctorFound";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
+import Research from "../Pages/Research";
 
 export const router = createBrowserRouter([
     {
@@ -40,7 +41,10 @@ export const router = createBrowserRouter([
                 path: '/contact',
                 Component: Contact,
             },
-
+            {
+                path: '/research',
+                Component: Research,
+            },
             {
                 path: '/about',
                 Component: About,

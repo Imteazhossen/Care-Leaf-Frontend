@@ -4,7 +4,7 @@ import { FaLeaf } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar sticky top-0 z-50 bg-gradient-to-r from-green-100 via-green-50 to-green-100 shadow-md px-5 md:px-20 backdrop-blur-md">
+    <nav className="navbar rounded-b-full mb-6  mx-auto sticky top-0 z-50 bg-gradient-to-r from-green-100 via-green-50 to-green-100 shadow-md px-5 md:px-20 backdrop-blur-md">
       {/* Left - Logo */}
       <div className="navbar-start">
         <div className="dropdown">
@@ -79,11 +79,12 @@ const Navbar = () => {
 
         <Link
           to="/"
-          className="flex items-center gap-2 text-green-700 font-bold text-xl md:text-2xl"
+          className="flex items-center gap-2  text-green-700 font-bold text-xl md:text-2xl"
         >
         
-          <span className="flex items-center gap-1">
-            <FaLeaf className="text-green-500 animate-pulse" />
+          <span className="flex items-center rounded-full border-2 border-green-300  bg-white p-2  gap-1">
+            
+            <FaLeaf className="text-green-500 bg-white rounded-full w-10 h-10 animate-pulse" />
             CareLeaf
           </span>
         </Link>
@@ -91,12 +92,12 @@ const Navbar = () => {
 
       {/* Center - Desktop Menu */}
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 space-x-3">
+        <ul className="menu bg-white rounded-full p-2 menu-horizontal px-1 space-x-3">
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `px-4 py-2 rounded-full transition-all duration-300 ${
+                `px-4 py-2 border-2 border-green-300 rounded-full transition-all duration-300 ${
                   isActive
                     ? "bg-green-500 text-white shadow-md"
                     : "text-green-700 hover:bg-green-200"
@@ -111,7 +112,7 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `px-4 py-2 rounded-full transition-all duration-300 ${
+                `px-4 py-2 rounded-full border-2 border-green-300 transition-all duration-300 ${
                   isActive
                     ? "bg-green-500 text-white shadow-md"
                     : "text-green-700 hover:bg-green-200"
@@ -126,7 +127,7 @@ const Navbar = () => {
             <NavLink
               to="/research"
               className={({ isActive }) =>
-                `px-4 py-2 rounded-full transition-all duration-300 ${
+                `px-4 py-2 rounded-full border-2 border-green-300  transition-all duration-300 ${
                   isActive
                     ? "bg-green-500 text-white shadow-md"
                     : "text-green-700 hover:bg-green-200"
@@ -141,7 +142,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `px-4 py-2 rounded-full transition-all duration-300 ${
+                `px-4 py-2 rounded-full border-2 border-green-300  transition-all duration-300 ${
                   isActive
                     ? "bg-green-500 text-white shadow-md"
                     : "text-green-700 hover:bg-green-200"
@@ -156,7 +157,7 @@ const Navbar = () => {
 
       {/* Right - Button */}
       <div className="navbar-end">
-        <button className="btn bg-green-600 text-white hover:bg-green-700 rounded-full px-6">
+        <button className="btn bg-green-600 border-2 border-green-300  text-white hover:bg-green-700 rounded-full px-6">
           Upload Leaf
         </button>
       </div>

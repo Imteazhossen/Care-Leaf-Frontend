@@ -4,7 +4,7 @@ import { FaSeedling, FaLeaf, FaUsers, FaFlask } from "react-icons/fa";
 
 const Numbers = () => {
   return (
-    <section className="my-16 bg-transparent border-2 border-green-200 py-16 rounded-3xl shadow-inner">
+    <section className="my-16 bg-white/50 border-2 border-green-200 py-16 rounded-3xl shadow-inner">
       {/* Title */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-extrabold text-green-800">

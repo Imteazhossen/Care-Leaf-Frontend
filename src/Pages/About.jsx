@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aniquaImg from "../assets/aniqua.jpeg";
+import aniquaImg from "../assets/aniqua-2.png";
+import imteazImg from "../assets/imteaz-zoom.png";
 import UseCases from "../Components/UseCases";
+import mahimuzImg from "../assets/mahimuz.jpeg"
 
 const teamMembers = [
   {
@@ -10,20 +12,22 @@ const teamMembers = [
     role: "Web Developer | AI ML Engineer",
     university: "University of Liberal Arts Bangladesh",
     field: "Computer Science and Engineering",
-    img: aniquaImg,
-    about:
-      "Specializes in machine learning and data analysis. Leads the project’s AI model development, focusing on disease classification accuracy and dataset refinement.",
+    img: imteazImg,
+    email:
+      "imteaz.hossen693@gmail.com",
+      number: "01621189202"
   },
   {
     id: 2,
     name: "Aniqua Nawar",
     role: "AI ML Engineer",
     university: "University of Liberal Arts Bangladesh",
-    field: "Computer Science and Engineering",
+    field: "Computer Science and Engineering   Email:   1.  mahimuzzaman2001@gmail.com",
     img: aniquaImg,
-    about:
-      "In this project, I conducted extensive research on plant disease detection using deep learning techniques. My focus was on developing and evaluating a Hybrid CNN model alongside the VGG19 architecture to classify bottle gourd plant diseases and estimate their severity levels. I analyzed the performance of both models to determine which provided higher accuracy and efficiency for disease classification and severity estimation. Through this work, I contributed to improving the model selection process and enhancing the overall effectiveness of the Bottle Gourd plant disease detection system.",
-  },
+    email:
+      "aniqua.nawar.cse@gmail.com",
+    number : "01771500675",
+   },
   {
     id: 3,
     name: "Sadia Islam",
@@ -31,8 +35,9 @@ const teamMembers = [
     university: "University of Liberal Arts Bangladesh",
     field: "Computer Science and Engineering",
     img: aniquaImg,
-    about:
-      "Handles dataset preprocessing, visualization, and pattern analysis. Focused on preparing clean and balanced data for training and testing deep learning models.",
+    email:
+      " saaadiaislam@gmail.com",
+    number: "01771002017",
   },
   {
     id: 4,
@@ -40,9 +45,10 @@ const teamMembers = [
     role: "AI ML Engineer",
     university: "University of Liberal Arts Bangladesh",
     field: "Computer Science and Engineering",
-    img: aniquaImg,
-    about:
-      "Designs and manages the backend system, API integration, and database operations to support efficient data flow between the web app and AI model.",
+    img: mahimuzImg,
+    email:
+      " mahimuzzaman2001@gmail.com",
+    number: "01301710109",
   },
 ];
 
@@ -167,7 +173,10 @@ const About = () => {
               </p>
               <p className="text-sm text-[#3E3E3E] mb-3">{member.field}</p>
               <p className="text-[#3E3E3E] text-sm leading-relaxed">
-                {member.about}
+                {member.email}
+              </p>
+              <p className="text-[#3E3E3E] text-sm leading-relaxed">
+                {member.number}
               </p>
             </div>
           </motion.div>

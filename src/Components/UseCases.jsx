@@ -1,5 +1,7 @@
 import { useState } from "react";
-import aniquaImg from "../assets/aniqua.jpeg";
+import aniquaImg from "../assets/aniqua-2.png";
+import mahimuzImg from "../assets/mahimuz.jpeg";
+import imteazImg from "../assets/imteaz-web.png";
 import FloatingBalls from "../Components/FloatingBalls";
 
 export default function UseCases() {
@@ -12,9 +14,9 @@ export default function UseCases() {
       role: "Web Developer | AI ML Engineer",
       university: "University of Liberal Arts Bangladesh",
       field: "Computer Science and Engineering",
-      img: aniquaImg,
+      img: imteazImg,
       about:
-        "Specializes in machine learning and data analysis. Leads the project’s AI model development, focusing on disease classification accuracy and dataset refinement.",
+        "In this project, I selected the research area of plant disease detection and conducted extensive research on the topic using deep learning techniques. I developed and evaluated a Hybrid CNN model along with several other model architectures to classify bottle gourd plant diseases and estimate their severity levels. I also designed and implemented the severity estimation function to analyze disease stages. In addition to the research and model development, I built both the frontend and backend of our web application Care-Leaf. I used Matplotlib to visualize and analyze model performance through various graphs. Furthermore, I integrated several useful packages and features into the website to enhance its functionality and user experience. I also presented the concepts of image segmentation and severity estimation as part of the project’s implementation.",
     },
     {
       id: 2,
@@ -24,7 +26,7 @@ export default function UseCases() {
       field: "Computer Science and Engineering",
       img: aniquaImg,
       about:
-        "In this project, I conducted extensive research on plant disease detection using deep learning techniques. My focus was on developing and evaluating a Hybrid CNN model alongside the VGG19 architecture to classify bottle gourd plant diseases and estimate their severity levels.",
+        "In this project, I conducted extensive research on plant disease detection using deep learning techniques. My focus was on optimizing and evaluating a Hybrid CNN model alongside the VGG19 architecture to classify bottle gourd plant diseases and estimate their severity levels. I analyzed the performance of both models to determine which provided higher accuracy and efficiency for disease classification and severity estimation. Through this work, I contributed to improving the model selection process and enhancing the overall effectiveness of the Bottle Gourd plant disease detection system.",
     },
     {
       id: 3,
@@ -34,7 +36,7 @@ export default function UseCases() {
       field: "Computer Science and Engineering",
       img: aniquaImg,
       about:
-        "Handles dataset preprocessing, visualization, and pattern analysis. Focused on preparing clean and balanced data for training and testing deep learning models.",
+        "In this capstone project, I have contributed to multiple key areas including: Topic Research – conducted background research on the project and related studies; Literature Review – prepared a detailed literature review summarizing existing works and identifying research gaps; Model Selection – took part in choosing suitable deep learning models; Model Development – built, implemented, and trained the EfficientNetB0 and ResNet50+CBAM models; Report Writing – authored and organized major sections of the project report, ensuring clarity, coherence, and technical accuracy.",
     },
     {
       id: 4,
@@ -42,7 +44,7 @@ export default function UseCases() {
       role: "AI ML Engineer",
       university: "University of Liberal Arts Bangladesh",
       field: "Computer Science and Engineering",
-      img: aniquaImg,
+      img: mahimuzImg,
       about:
         "Designs and manages the backend system, API integration, and database operations to support efficient data flow between the web app and AI model.",
     },
@@ -123,15 +125,15 @@ export default function UseCases() {
                     ${isActive ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}
                   `}
                 >
-                  <p className="text-xl font-semibold text-white sm:text-xl">
+                  <p className="text-xl font-extrabold text-white sm:text-xl">
                     {c.name}
                   </p>
-                  <p className="text-xl font-semibold text-white sm:text-xl">
+                  <p className="text-xl font-extrabold text-white sm:text-xl">
                     {c.role}
                   </p>
-                  <i className="mt-1 text-md text-white/85 sm:text-md">{c.university}</i>
-                  <p className="mt-1 text-md text-white/85 sm:text-md">{c.field}</p>
-                  <p className="mt-1 text-md text-white/85 sm:text-md">{c.about}</p>
+                  <i className="mt-1 text-sm text-white/85 font-semibold sm:text-sm">{c.university}</i>
+                  <p className="mt-1 text-sm text-white/85 font-semibold sm:text-sm">{c.field}</p>
+                  <p className="mt-1 text-sm text-white/85  font-semibold sm:text-sm">{c.about}</p>
                 </div>
 
                 {/* Border glow on active */}

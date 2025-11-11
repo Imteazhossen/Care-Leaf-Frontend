@@ -1,9 +1,14 @@
 import React from 'react';
+import ResearchIntro from '../Components/ResearchIntro';
+import HybridCNNSection from '../Components/HybridCNNSection';
+import FutureScopeSection from '../Components/FutureScopeSection';
 
 const Research = () => {
     return (
         <div>
-            i am research
+             <ResearchIntro />
+      <HybridCNNSection />
+      <FutureScopeSection />
         </div>
     );
 };

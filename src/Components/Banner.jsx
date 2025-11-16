@@ -1,53 +1,86 @@
 import React, { useState } from "react";
 import { FaLeaf, FaCloudUploadAlt } from "react-icons/fa";
-import banner from "../assets/banner-img-1.jpg";
-import banner2 from "../assets/banner2.jpg";
 
 const Banner = () => {
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(null); // preview image
+  const [file, setFile] = useState(null);   // actual file
+  const [result, setResult] = useState(null); // prediction results
+  const [loading, setLoading] = useState(false);
 
   const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setImage(URL.createObjectURL(file));
+    const selected = e.target.files[0];
+    // console.log(selected);
+    if (selected) {
+      setFile(selected);
+      // console.log(setFile);
+      setImage(URL.createObjectURL(selected));
+      setResult(null); // reset old result
     }
+  };
+
+  const handleAnalyze = async () => {
+    if (!file) {
+      alert("Please upload an image first!");
+      return;
+    }
+
+    setLoading(true);
+
+    const formData = new FormData();
+    // console.log(formData);
+    formData.append("file", file);
+
+    try {
+      const response = await fetch("http://localhost:8000/predict", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+      setResult(data);
+    } catch (err) {
+      console.error("Prediction error:", err);
+    }
+
+    setLoading(false);
   };
 
   return (
     <section className="w-full py-10 md:py-16 bg-transparent flex justify-center items-center">
       <div className="w-[90%] md:w-[80%] border-2 border-green-200 rounded-3xl shadow-xl bg-white p-6 md:p-12">
-        {/* Text Section */}
+
+        {/* Title */}
         <div className="text-center space-y-4">
           <h1 className="text-3xl md:text-5xl font-extrabold text-green-700 flex justify-center items-center gap-3">
             <FaLeaf className="text-green-500 animate-bounce" />
             Smart Gourd Leaf Disease Detector
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Upload an image of a bottle gourd leaf and let our AI model identify
-            the disease and classify its severity. Powered by our own Hybrid CNN Model and
-            deep learning for accurate, reliable predictions.
+            Upload an image of a bottle gourd leaf and let our AI analyze the disease 
+            and severity using our Hybrid CNN model.
           </p>
         </div>
 
         {/* Upload Section */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
+          
           {/* Upload Box */}
-          <div className="flex flex-col justify-center items-center bg-green-50 border-2 border-green-200 p-6 rouded-xl shadow-sm hover:shadow-md transition duration-300 ease-in-out w-full md:w-1/2">
-            <label
-              htmlFor="leaf-upload"
-              className="cursor-pointer flex flex-col items-center justify-center"
-            >
+          <div className="flex flex-col justify-center items-center bg-green-50 border-2 border-green-200 p-6 rounded-xl shadow-sm hover:shadow-md transition w-full md:w-1/2">
+            
+            <label htmlFor="leaf-upload" className="cursor-pointer flex flex-col items-center">
               <FaCloudUploadAlt className="text-6xl text-green-500 hover:scale-110 transition-transform duration-300" />
               <p className="text-gray-600 mt-3">Click to upload leaf image</p>
-              <input
-                id="leaf-upload"
-                type="file"
-                accept="image/*"
+
+              <input 
+                id="leaf-upload" 
+                type="file" 
+                accept="image/*" 
                 className="hidden"
                 onChange={handleImageChange}
               />
             </label>
 
+            {/* Preview */}
             {image && (
               <div className="mt-5 rounded-xl">
                 <img
@@ -57,24 +90,38 @@ const Banner = () => {
                 />
               </div>
             )}
-            <button className="btn btn-success mt-5 rounded-full px-8 text-white">
-              Analyze Disease
+
+            {/* Button */}
+            <button 
+              onClick={handleAnalyze}
+              className="btn btn-success mt-5 rounded-full px-8 text-white"
+            >
+              {loading ? "Analyzing..." : "Analyze Disease"}
             </button>
+
+            {/* Results */}
+            {result && (
+              <div className="mt-6 text-center">
+                <h3 className="text-xl font-bold text-green-700">Prediction Result</h3>
+                <p className="text-gray-700 mt-1">
+                  <span className="font-semibold">Disease:</span> {result.disease}
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Severity:</span> {result.severity}
+                </p>
+
+                {/* Grad-CAM image */}
+                {result.heatmap && (
+                  <img
+                    src={`data:image/png;base64,${result.heatmap}`}
+                    alt="Heatmap"
+                    className="mt-4 rounded-xl border-2 border-green-300 w-48 h-48 object-cover"
+                  />
+                )}
+              </div>
+            )}
           </div>
 
-          {/* Right-side Banner Images */}
-          <div className="flex flex-col md:w-1/2 gap-4">
-            <img
-              src={banner}
-              alt="Plant Banner"
-              className="rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
-            />
-            <img
-              src={banner2}
-              alt="Plant Banner 2"
-              className="rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
-            />
-          </div>
         </div>
       </div>
     </section>

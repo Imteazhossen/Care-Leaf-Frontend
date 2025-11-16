@@ -15,7 +15,7 @@ const Home = () => {
     // creates a stacking context so z-[-1] works reliably
     <div className="relative isolate min-h-screen">
       {/* Background: fixed to viewport, behind all content */}
-      <ParticlesBackground color="#26A641" density={140} zIndex={-1} />
+      <ParticlesBackground color="#26A641" density={100} zIndex={-1} />
 
       {/* Page content sits above */}
       <div className="relative z-10">

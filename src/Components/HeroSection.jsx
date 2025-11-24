@@ -3,7 +3,7 @@ import bgVideo from '../assets/bg.mp4'; // <-- replace with your actual video pa
 
 const HeroSection = () => {
     return (
-        <div className="relative w-full min-h-screen overflow-hidden">
+        <div className="relative w-full min-h-screen overflow-hidden rounded-lg">
             {/* Background Video */}
             <video
                 className="absolute top-0 left-0 w-full h-full object-cover"

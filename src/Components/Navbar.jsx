@@ -4,7 +4,7 @@ import { FaLeaf } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar rounded-b-full mb-6  mx-auto sticky top-0 z-50 bg-gradient-to-r from-green-100 via-green-50 to-green-100 shadow-md px-5 md:px-20 backdrop-blur-md">
+    <nav className="navbar rounded-b-full   mx-auto sticky top-0 z-50 bg-gradient-to-r from-green-100 via-green-50 to-green-100 shadow-md px-5 md:px-20 backdrop-blur-md">
       {/* Left - Logo */}
       <div className="navbar-start">
         <div className="dropdown">

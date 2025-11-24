@@ -24,7 +24,7 @@ const Numbers = () => {
             <FaLeaf className="text-green-500 text-5xl" />
           </div>
           <h2 className="text-5xl font-extrabold text-green-700">
-            <CountUp end={1200} duration={10} />+
+            <CountUp end={2402} duration={20} />+
           </h2>
           <p className="mt-3 text-green-700 font-semibold">Leaf Images Trained</p>
         </div>
@@ -35,7 +35,7 @@ const Numbers = () => {
             <FaFlask className="text-green-500 text-5xl" />
           </div>
           <h2 className="text-5xl font-extrabold text-green-700">
-            <CountUp end={8} duration={5} />+
+            <CountUp end={4} duration={20} />+
           </h2>
           <p className="mt-3 text-green-700 font-semibold">AI Models Tested</p>
         </div>
@@ -46,7 +46,7 @@ const Numbers = () => {
             <FaUsers className="text-green-500 text-5xl" />
           </div>
           <h2 className="text-5xl font-extrabold text-green-700">
-            <CountUp end={15} duration={5} />+
+            <CountUp end={4} duration={20} />+
           </h2>
           <p className="mt-3 text-green-700 font-semibold">Research Collaborations</p>
         </div>
@@ -57,7 +57,7 @@ const Numbers = () => {
             <FaSeedling className="text-green-500 text-5xl" />
           </div>
           <h2 className="text-5xl font-extrabold text-green-700">
-            <CountUp end={97} duration={8} />%
+            <CountUp end={97} duration={20} />%
           </h2>
           <p className="mt-3 text-green-700 font-semibold">Model Accuracy</p>
         </div>

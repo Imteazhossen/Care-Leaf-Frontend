@@ -9,7 +9,7 @@ const Banner = () => {
 
   const handleImageChange = (e) => {
     const selected = e.target.files[0];
-    // console.log(selected);
+    console.log(selected);
     if (selected) {
       setFile(selected);
       // console.log(setFile);
@@ -27,7 +27,7 @@ const Banner = () => {
     setLoading(true);
 
     const formData = new FormData();
-    // console.log(formData);
+    console.log(formData);
     formData.append("file", file);
 
     try {
@@ -51,7 +51,7 @@ const Banner = () => {
 
         {/* Title */}
         <div className="text-center space-y-4">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-green-700 flex justify-center items-center gap-3">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-green-700 flex justify-center items-center gap-3">
             <FaLeaf className="text-green-500 animate-bounce" />
             Smart Gourd Leaf Disease Detector
           </h1>

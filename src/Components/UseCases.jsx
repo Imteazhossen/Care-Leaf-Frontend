@@ -2,6 +2,7 @@ import { useState } from "react";
 import aniquaImg from "../assets/aniqua-2.png";
 import mahimuzImg from "../assets/mahimuz.jpeg";
 import imteazImg from "../assets/imteaz-web.png";
+import sadiaImg from "../assets/sadia.png"
 import FloatingBalls from "../Components/FloatingBalls";
 
 export default function UseCases() {
@@ -34,7 +35,7 @@ export default function UseCases() {
       role: "AI ML Engineer",
       university: "University of Liberal Arts Bangladesh",
       field: "Computer Science and Engineering",
-      img: aniquaImg,
+      img: sadiaImg,
       about:
         "In this capstone project, I have contributed to multiple key areas including: Topic Research – conducted background research on the project and related studies; Literature Review – prepared a detailed literature review summarizing existing works and identifying research gaps; Model Selection – took part in choosing suitable deep learning models; Model Development – built, implemented, and trained the EfficientNetB0 and ResNet50+CBAM models; Report Writing – authored and organized major sections of the project report, ensuring clarity, coherence, and technical accuracy.",
     },

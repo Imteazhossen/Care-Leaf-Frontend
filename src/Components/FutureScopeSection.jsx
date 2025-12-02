@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import futureImg from "../assets/imteaz-web.png"; // replace with your relevant image
+import futureImg from "../assets/lau.webp"; // replace with your relevant image
 
 const FutureScopeSection = () => {
   return (

@@ -4,6 +4,7 @@ import aniquaImg from "../assets/aniqua-2.png";
 import imteazImg from "../assets/imteaz-zoom.png";
 import UseCases from "../Components/UseCases";
 import mahimuzImg from "../assets/mahimuz.jpeg"
+import sadiaImg from "../assets/sadia.png"
 
 const teamMembers = [
   {
@@ -34,7 +35,7 @@ const teamMembers = [
     role: "AI ML Engineer",
     university: "University of Liberal Arts Bangladesh",
     field: "Computer Science and Engineering",
-    img: aniquaImg,
+    img: sadiaImg,
     email:
       " saaadiaislam@gmail.com",
     number: "01771002017",

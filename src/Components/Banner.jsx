@@ -12,7 +12,7 @@ const Banner = () => {
     console.log(selected);
     if (selected) {
       setFile(selected);
-      // console.log(setFile);
+      console.log(setFile);
       setImage(URL.createObjectURL(selected));
       setResult(null); // reset old result
     }

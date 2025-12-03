@@ -1,6 +1,4 @@
-import React, { Suspense } from "react";
 import Banner from "../Components/Banner";
-import DoctorsContainer from "../Components/DoctorsContainer";
 import Numbers from "../Components/Numbers";
 import MissionSection from "../Components/MissionSection";
 import AccordionSection from "../Components/AccordionItem";

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import hybridImg from "../assets/architecture.png"; // replace with your CNN diagram image
+import BottleGourdNetImg from "../assets/architecture.png"; // replace with your CNN diagram image
 
-const HybridCNNSection = () => {
+const BottleGourdNetCNNSection = () => {
     return (
         <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
             {/* Text Left */}
@@ -12,15 +12,14 @@ const HybridCNNSection = () => {
                 className="text-[#3E3E3E] order-2 md:order-1"
             >
                 <h2 className="text-3xl font-bold text-green-700 mb-4">
-                    How the Hybrid CNN Works
+                    How the BottleGourdNet CNN Works
                 </h2>
 
                 <p className="leading-relaxed text-lg">
-                    The <span className="font-semibold">Hybrid CNN</span> is a custom deep learning model built to classify
+                    The <span className="font-semibold">BottleGourdNet CNN</span> is a custom deep learning model built to classify
                     bottle gourd leaf diseases. It combines multiple convolutional layers with
                     <span className="font-semibold"> batch normalization</span> and <span className="font-semibold">dropout</span> to ensure efficient learning
-                    and reduce overfitting. The model was fine-tuned using
-                    <span className="font-semibold"> GridSearchCV</span> for optimal accuracy.
+                    and reduce overfitting.
                 </p>
 
                 <p className="leading-relaxed text-lg mt-4">
@@ -29,12 +28,11 @@ const HybridCNNSection = () => {
                     generalization. The extracted features are flattened and passed through
                     <span className="font-semibold"> fully connected layers</span> for final classification.
                 </p>
-
                 <p className="leading-relaxed text-lg mt-4">
-                    The output layer uses <span className="font-semibold">softmax</span> to categorize each image into
+                    The output layer uses <span className="font-semibold">softmax, relu</span> to categorize each image into
                     <span className="font-semibold"> Fresh</span>, <span className="font-semibold">Anthracnose</span>, or
                     <span className="font-semibold"> Downy Mildew</span>. Achieving about
-                    <span className="font-semibold"> 97% accuracy</span>, the Hybrid CNN offers a strong balance of precision,
+                    <span className="font-semibold"> 94.37% accuracy</span>, the BottleGourdNet CNN offers a strong balance of precision,
                     efficiency, and interpretability compared to other models.
                 </p>
 
@@ -48,8 +46,8 @@ const HybridCNNSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg order-1 md:order-2"
             >
                 <img
-                    src={hybridImg}
-                    alt="Hybrid CNN"
+                    src={BottleGourdNetImg}
+                    alt="BottleGourdNet CNN"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
             </motion.div>
@@ -57,4 +55,4 @@ const HybridCNNSection = () => {
     );
 };
 
-export default HybridCNNSection;
+export default BottleGourdNetCNNSection;

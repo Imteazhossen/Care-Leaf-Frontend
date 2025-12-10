@@ -57,7 +57,7 @@ const Numbers = () => {
             <FaSeedling className="text-green-500 text-5xl" />
           </div>
           <h2 className="text-5xl font-extrabold text-green-700">
-            <CountUp end={97} duration={20} />%
+            <CountUp end={94} duration={20} />+%
           </h2>
           <p className="mt-3 text-green-700 font-semibold">Model Accuracy</p>
         </div>

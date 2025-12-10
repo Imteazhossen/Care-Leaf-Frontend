@@ -28,7 +28,7 @@ const MissionSection = () => {
           <p className="text-green-700 mb-6 text-lg leading-relaxed">
             <span className="font-semibold">CareLeaf</span> bridges the gap between technology and
             agriculture. Our AI model detects and classifies gourd leaf diseases from simple images,
-            allowing farmers to identify issues early and take timely actions — all through a
+            allowing farmers to identify issues early and take timely actions, all through a
             simple, accessible interface.
           </p>
 

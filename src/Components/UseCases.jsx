@@ -17,7 +17,7 @@ export default function UseCases() {
       field: "Computer Science and Engineering",
       img: imteazImg,
       about:
-        "In this project, I selected the research area of plant disease detection and conducted extensive research on the topic using deep learning techniques. I developed and evaluated a Hybrid CNN model along with several other model architectures to classify bottle gourd plant diseases and estimate their severity levels. I also designed and implemented the severity estimation function to analyze disease stages. In addition to the research and model development, I built both the frontend and backend of our web application Care-Leaf. I used Matplotlib to visualize and analyze model performance through various graphs. Furthermore, I integrated several useful packages and features into the website to enhance its functionality and user experience. I also presented the concepts of image segmentation and severity estimation as part of the project’s implementation.",
+        "In this project, I selected the research area of plant disease detection and conducted extensive research on the topic using deep learning techniques. I developed and evaluated a BottleGourdNet CNN model along with several other model architectures to classify bottle gourd plant diseases and estimate their severity levels. I also designed and implemented the severity estimation function to analyze disease stages. In addition to the research and model development, I built both the frontend and backend of our web application Care-Leaf. I used Matplotlib to visualize and analyze model performance through various graphs. Furthermore, I integrated several useful packages and features into the website to enhance its functionality and user experience. I also presented the concepts of image segmentation and severity estimation as part of the project’s implementation.",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default function UseCases() {
       field: "Computer Science and Engineering",
       img: aniquaImg,
       about:
-        "In this project, I conducted extensive research on plant disease detection using deep learning techniques. My focus was on optimizing and evaluating a Hybrid CNN model alongside the VGG19 architecture to classify bottle gourd plant diseases and estimate their severity levels. I analyzed the performance of both models to determine which provided higher accuracy and efficiency for disease classification and severity estimation. Through this work, I contributed to improving the model selection process and enhancing the overall effectiveness of the Bottle Gourd plant disease detection system.",
+        "In this project, I conducted extensive research on plant disease detection using deep learning techniques. My focus was on optimizing and evaluating a BottleGourdNet CNN model alongside the VGG19 architecture to classify bottle gourd plant diseases and estimate their severity levels. I analyzed the performance of both models to determine which provided higher accuracy and efficiency for disease classification and severity estimation. Through this work, I contributed to improving the model selection process and enhancing the overall effectiveness of the Bottle Gourd plant disease detection system.",
     },
     {
       id: 3,

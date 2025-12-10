@@ -92,7 +92,7 @@ const About = () => {
         >
           <h2 className="text-3xl font-bold text-green-700 mb-4">Our Mission</h2>
           <p className="text-[#3E3E3E] leading-relaxed">
-            Our mission is to apply advanced technologies like Machine Learning and
+            Our mission is to apply advanced technologies like Machine Learning, Deep Learning and
             Computer Vision to revolutionize plant disease detection. We aim to
             reduce crop loss, support farmers with reliable tools, and contribute to
             sustainable agriculture in Bangladesh and beyond.
@@ -126,9 +126,9 @@ const About = () => {
         </h2>
         <p className="text-[#3E3E3E] max-w-3xl mx-auto leading-relaxed">
           Our system integrates Python, TensorFlow, PyTorch, React, and
-          Tailwind CSS for both the machine learning model and user interface.
+          Tailwind CSS for both the deep learning model and user interface.
           We’ve also utilized Google Colab for training, Flask for API
-          integration, and MongoDB for backend data storage.
+          integration, and Hugging Face for using deployed model.
         </p>
       </motion.div>
 

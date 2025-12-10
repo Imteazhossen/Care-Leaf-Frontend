@@ -38,22 +38,20 @@ const ResearchIntro = () => {
           of deep learning models for classifying and predicting bottle gourd leaf diseases
           using image-based analysis. Conventional image classification methods often fail
           to capture complex visual patterns, so we implemented several advanced
-          Convolutional Neural Network (CNN) architectures, such as Hybrid CNN, VGG19,
+          Convolutional Neural Network (CNN) architectures, such as BottleGourdNet, VGG19,
           EfficientNetB0, and ResNet50+CBAM, to overcome this limitation.
         </p>
 
         <p className="leading-relaxed text-lg mt-4">
           The dataset used in our research consists of <span className="font-semibold">Fresh, Anthracnose,</span> and
-          <span className="font-semibold"> Downy Mildew</span> leaf images. We applied techniques like GridSearchCV for
-          hyperparameter tuning and Stratified K-Fold Cross Validation for balanced model
-          evaluation. Our results showed that VGG19 and the Hybrid CNN achieved the
+          <span className="font-semibold"> Downy Mildew</span> leaf images. Our results showed that VGG19 and the BottleGourdNet CNN achieved the
           highest accuracy, while EfficientNetB0 performed faster but required further
           optimization. Additionally, we developed a severity estimation function capable
           of predicting disease stages, mild, moderate, and severe, with high confidence.
         </p>
 
         <p className="leading-relaxed text-lg mt-4">
-          This hybrid approach combines the strengths of multiple CNN architectures to
+          This BottleGourdNet approach combines the strengths of multiple CNN architectures to
           provide both accurate classification and interpretable predictions. Using Grad-CAM
           visualization, the model highlights affected areas on leaves, improving transparency
           and user trust. Ultimately, our system supports precision agriculture by equipping

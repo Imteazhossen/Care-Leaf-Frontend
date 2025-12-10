@@ -81,9 +81,9 @@ const Navbar = () => {
           to="/"
           className="flex items-center gap-2  text-green-700 font-bold text-xl md:text-2xl"
         >
-        
+
           <span className="flex items-center rounded-full border-2 border-green-300  bg-white p-2  gap-1">
-            
+
             <FaLeaf className="text-green-500 bg-white rounded-full w-10 h-10 animate-pulse" />
             CareLeaf
           </span>
@@ -97,10 +97,9 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `px-4 py-2 border-2 border-green-300 rounded-full transition-all duration-300 ${
-                  isActive
-                    ? "bg-green-500 text-white shadow-md"
-                    : "text-green-700 hover:bg-green-200"
+                `px-4 py-2 border-2 border-green-300 rounded-full transition-all duration-300 ${isActive
+                  ? "bg-green-500 text-white shadow-md"
+                  : "text-green-700 hover:bg-green-200"
                 }`
               }
             >
@@ -112,10 +111,9 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `px-4 py-2 rounded-full border-2 border-green-300 transition-all duration-300 ${
-                  isActive
-                    ? "bg-green-500 text-white shadow-md"
-                    : "text-green-700 hover:bg-green-200"
+                `px-4 py-2 rounded-full border-2 border-green-300 transition-all duration-300 ${isActive
+                  ? "bg-green-500 text-white shadow-md"
+                  : "text-green-700 hover:bg-green-200"
                 }`
               }
             >
@@ -127,10 +125,9 @@ const Navbar = () => {
             <NavLink
               to="/research"
               className={({ isActive }) =>
-                `px-4 py-2 rounded-full border-2 border-green-300  transition-all duration-300 ${
-                  isActive
-                    ? "bg-green-500 text-white shadow-md"
-                    : "text-green-700 hover:bg-green-200"
+                `px-4 py-2 rounded-full border-2 border-green-300  transition-all duration-300 ${isActive
+                  ? "bg-green-500 text-white shadow-md"
+                  : "text-green-700 hover:bg-green-200"
                 }`
               }
             >
@@ -142,10 +139,9 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `px-4 py-2 rounded-full border-2 border-green-300  transition-all duration-300 ${
-                  isActive
-                    ? "bg-green-500 text-white shadow-md"
-                    : "text-green-700 hover:bg-green-200"
+                `px-4 py-2 rounded-full border-2 border-green-300  transition-all duration-300 ${isActive
+                  ? "bg-green-500 text-white shadow-md"
+                  : "text-green-700 hover:bg-green-200"
                 }`
               }
             >
@@ -157,9 +153,12 @@ const Navbar = () => {
 
       {/* Right - Button */}
       <div className="navbar-end">
-        <button className="btn bg-green-600 border-2 border-green-300  text-white hover:bg-green-700 rounded-full px-6">
-          Upload Leaf
-        </button>
+        
+          <button className="btn bg-green-600 border-2 border-green-300 text-white hover:bg-green-700 rounded-full px-6">
+            Powered By BottleGourdNet
+          </button>
+        
+
       </div>
     </nav>
   );

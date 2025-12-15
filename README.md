@@ -27,12 +27,13 @@ Plant diseases can drastically reduce agricultural productivity. Manual detectio
 
 ## ✨ Key Features
 
-- 🤖 AI-based bottle gourd leaf disease detection  
+- 🤖 AI-based bottle gourd leaf disease detection using **BottleGourdNet** (custom CNN model)  
 - ⚖️ Severity estimation (Mild, Moderate, Severe)  
 - 🔥 GradCAM visualization for model interpretability  
 - 🖥️ Clean and responsive user interface  
-- ⚡ Real-time inference using HuggingFace deployment  
-- 💻 Professional frontend built with React and Tailwind CSS  
+- ✨ Interactive **particles animation** using `tsParticles`  
+- ⚡ Real-time inference using **HuggingFace API**  
+- 💻 Professional frontend built with **React, JavaScript, and Tailwind CSS**  
 
 ---
 
@@ -48,16 +49,17 @@ Plant diseases can drastically reduce agricultural productivity. Manual detectio
 
 ### Frontend
 - ⚛️ React.js  
+- 🟩 JavaScript  
 - 🎨 Tailwind CSS  
 - ✨ Framer Motion  
+- 💫 tsParticles (interactive particle effects)  
 - 📄 React Markdown  
 
 ### Backend / AI
 - 🐍 Python  
-- 🧠 TensorFlow / Keras  
-- 📸 Deep Learning CNN Model  
+- 🧠 TensorFlow / Keras (**BottleGourdNet** CNN model)  
 - 🔥 GradCAM for explainability  
-- 🌐 HuggingFace Spaces (Model Deployment)  
+- 🌐 HuggingFace API for model deployment and inference  
 - 🤝 Gradio API  
 
 ---
@@ -65,7 +67,7 @@ Plant diseases can drastically reduce agricultural productivity. Manual detectio
 ## 🏗️ System Architecture
 
 1. 🖼️ User uploads a leaf image from the web interface  
-2. 📤 Image is sent to the HuggingFace-hosted AI model  
+2. 📤 Image is sent to the **HuggingFace API** hosting **BottleGourdNet**  
 3. 🧠 The model performs:  
    - Disease classification  
    - Severity estimation  

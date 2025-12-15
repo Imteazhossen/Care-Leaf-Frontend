@@ -1,10 +1,10 @@
-import Banner from "../Components/Banner";
 import Numbers from "../Components/Numbers";
 import MissionSection from "../Components/MissionSection";
 import AccordionSection from "../Components/AccordionItem";
 import HeroSection from "../Components/HeroSection";
 import ContactUs from "../Components/ContactUs";
 import ParticlesBackground from "../Components/ParticlesBackground";
+import Analyze from "../Components/Analyze";
 
 const Home = () => {
   // const data = useLoaderData();
@@ -18,7 +18,8 @@ const Home = () => {
       {/* Page content sits above */}
       <div className="relative z-10">
         <HeroSection />
-        <Banner />
+        {/* <Banner /> */}
+        <Analyze></Analyze>
 
         {/* <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
           <DoctorsContainer doctorsDetails={data} />

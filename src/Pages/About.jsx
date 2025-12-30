@@ -23,7 +23,7 @@ const teamMembers = [
     name: "Aniqua Nawar",
     role: "AI ML Engineer",
     university: "University of Liberal Arts Bangladesh",
-    field: "Computer Science and Engineering   Email:   1.  mahimuzzaman2001@gmail.com",
+    field: "Computer Science and Engineering   Email: aniqua.nawar4614@gmail.com",
     img: aniquaImg,
     email:
       "aniqua.nawar.cse@gmail.com",

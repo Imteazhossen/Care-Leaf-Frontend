@@ -21,7 +21,7 @@ const DoctorsContainer = ({ doctorsDetails }) => {
         <div className='py-10 px-20'>
             <div className='mb-20'>
             <h1 className= 'text-2xl md:text-5xl font-bold text-center '>Our Best Doctors</h1>
-            <p className='mt-5 text-center'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's <br /> a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
+            <p className='mt-5 text-center'>Our platform connects you with verified, experienced doctors across various specialties, all at your convenience. Whether it's <br /> a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-5">
                 {

@@ -198,7 +198,7 @@ const About = () => {
       >
         <p>
           © {new Date().getFullYear()} University of Liberal Arts Bangladesh | Capstone
-          Project — Bottle Gourd Disease Detection
+          Project, Bottle Gourd Disease Detection
         </p>
       </motion.div>
     </section>

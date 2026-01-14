@@ -1,6 +1,6 @@
 # 🌿 CareLeaf – Smart Gourd Leaf Disease Detector
 
-**CareLeaf** is an AI-powered web application that detects **bottle gourd leaf diseases**, estimates **disease severity**, and provides **visual explanations using GradCAM**.  
+**CareLeaf** is an AI-powered web application that detects **bottle gourd leaf diseases**, Powered by our own model **BottlegourdNet** estimates **disease severity**, and provides **visual explanations using GradCAM**.  
 It helps farmers, researchers, and students identify plant diseases early and take preventive measures.  
 
 🌐 **Live Website:** [https://careleaf.netlify.app/](https://careleaf.netlify.app/)
